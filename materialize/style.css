@@ -1,6 +1,9 @@
-body{
-    background: orange;
+html,
+body { 
+    background-color: orange;
+     
 }
+
 .mat-img{
     min-height: 350px !important;
     max-height: 350px !important;
