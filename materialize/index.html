@@ -1,76 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Materialize</title>
 </head>
-<body>
 
-    <!-- <div class="container"> -->
-        <div class="container">
-            <h2 class="blue-text lighten-1 center">Learning materialize</h2>
-            <div class="row">
-                <div class="col m6 blue lighten-3">
+<body>
+    <header>
+
+        <nav class="grey darken-3">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">
+                    <i class="material-icons">mood</i>
+                </a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li class="hoverable blue">
+                        <a href="#">Sass</a>
+                    </li>
+                    <li class="orange">
+                        <a href="#">Components</a>
+                    </li>
+                    <li class="red">
+                        <a href="#">JavaScript</a>
+                    </li>
+                    <li class="white darken-4 ">
+                        <a class="purple-text" href="#">Java</a>
+                    </li>
+                    <li class="blue lighten-2 ">
+                        <a class="whie-text" href="#">Php</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <header>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">
+                    <i class="material-icons">cloud</i>Logo</a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">search</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">view_module</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">refresh</i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+<div class="blue"><br></div>
+<div class="slider">
+    <ul class="slides">
+  
+        <li>
+            <img src="https://lorempixel.com/580/250/nature/3">
+            <!-- random image -->
+            <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+<img src="https://www.mediastaan.com/wp-content/uploads/2013/12/girls-wallpaper-mediastaan-31.jpg">
+            <!-- random image -->
+            <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+    </ul>
+</div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./par.jpg">
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="blue-text lighten-1 center">Learning materialize</h2>
+        <div class="row">
+            <div class="col m6 blue lighten-3">
                 <img class="mat-img col m12 circle responsive-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOJCrIPBzQNXqRgIKvJCfD7bMzqrnbJ_hGPr67Fo3npqbpIyYzFw"
                     alt="">
-                </div>
-                <div class="col m6 blue lighten-3">
-                <img  class="mat-img col m12 circle responsive-img" src="data:image/jpeg;base64,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"
-                alt="">
-                </div>
-            </div> 
-            <div class="row">
-                <div class="col m4 yellow">
-                    <h5 class="center">Մատերիալայզ</h5>
-                    <div class="row">
-                        <div class="col blue m4 offset-m4">
-                            <i class="center-align hoverable large material-icons">accessibility</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col m4 green">
-                    <h5 class="center">Մատերիալայզ</h5>
-                    <div class="row">
-                        <div class="col purple m4 offset-m4">
-                            <i class="center-align hoverable large material-icons">attach_money</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col m4 red">
-                    <h5 class="center">Մատերիալայզ</h5>
-
-                    <div class="row">
-                        <div class="col brown m4 offset-m4">
-                    <i class="center-align hoverable large material-icons">assignment_ind</i>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-                <div class="divider"></div>
-                <div class="section">
-                    <h5>Section 1</h5>
-                    <p>Stuff</p>
-                </div>
-                <div class="divider"></div>
-                <div class="section">
-                    <h5>Section 2</h5>
-                    <p>Stuff</p>
-                </div>
-                <div class="divider"></div>
-                <div class="section">
-                    <h5>Section 3</h5>
-                    <p>Stuff</p>
-                </div>
+            </div>
+            <div class="col m6 blue lighten-3">
+                <img class="mat-img col m12 circle responsive-img" src="data:image/jpeg;base64,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"
+                    alt="">
+            </div>
         </div>
-    <!-- </div> -->
+        <div class="row">
+            <div class="col m4 yellow">
+                <h5 class="center">Մատերիալայզ</h5>
+                <div class="row">
+                    <div class="col blue m4 offset-m4">
+                        <i class="center-align hoverable large material-icons">accessibility</i>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4 green">
+                <h5 class="center">Մատերիալայզ</h5>
+                <div class="row">
+                    <div class="col purple m4 offset-m4">
+                        <i class="center-align hoverable large material-icons">attach_money</i>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4 red">
+                <h5 class="center">Մատերիալայզ</h5>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src="./script.js"></script>
+                <div class="row">
+                    <div class="col brown m4 offset-m4">
+                        <i class="center-align hoverable large material-icons">assignment_ind</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Section 1</h5>
+            <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Section 2</h5>
+            <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h5>Section 3</h5>
+            <p>Stuff</p>
+        </div>
+
+
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body white">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+   <script>
+ 
+    </script>
 </body>
+
 </html>
