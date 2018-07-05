@@ -22,7 +22,17 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 </head>
-<body id="page-top">  
+
+<body id="page-top">
+    <div class="spinner-wrapper">
+            <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Arthur Melikyan CV</a>
@@ -391,7 +401,7 @@
 
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fa fa-times"></i>
-                                     Close</button>
+                                    Close</button>
                             </div>
                         </div>
                     </div>
@@ -683,6 +693,20 @@
                     return openerElement.is('img') ? openerElement : openerElement.find('img');
                 }
             }
+        });
+
+        //preload 
+        $(document).ready(function () {
+            //Preloader
+            $(window).on("load", function () {
+                preloaderFadeOutTime = 500;
+
+                function hidePreloader() {
+                    var preloader = $('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+            });
         });
     </script>
 </body>
