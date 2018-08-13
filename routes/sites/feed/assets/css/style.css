@@ -872,7 +872,9 @@ blockquote {
 .single_post_content {
     float: left;
     display: inline;
-    /* width: 100%; */
+    border-bottom:1px solid #efefef;
+    box-sizing: border-box;
+    /* margin-left:10px; */
     padding: 10px 0;
     margin-bottom: 20px;
     min-height: 150px;
