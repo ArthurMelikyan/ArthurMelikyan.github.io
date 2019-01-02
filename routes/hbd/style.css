@@ -81,7 +81,7 @@ p,h1,h2,h3,h4,h5,h6 {
 
 #notice.show {
   opacity: 1;
-  bottom: -90px;
+  bottom: -160px;
 }
 
 .card:hover .face {
@@ -235,4 +235,84 @@ p,h1,h2,h3,h4,h5,h6 {
   -o-transform: rotateY(15deg);
   -ms-transform: rotateY(15deg);
   transform: rotateY(15deg);
+}
+@media only screen and (max-width: 1200px) {
+  #card {
+    width: 50% !important;
+  }
+  #notice.show {
+    opacity: 1;
+    bottom: -190px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #card {
+    width: 50% !important;
+  }
+  #notice.show {
+    opacity: 1;
+    bottom: -150px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #card {
+    width: 70% !important;
+  }
+  #notice.show {
+    opacity: 1;
+    font-size: 34px;
+    bottom: -180px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #card {
+    width: 70% !important;
+  }
+  #notice.show {
+    opacity: 1;
+    font-size: 34px;
+    bottom: -150px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #card {
+    width: 70% !important;
+  }
+  #notice.show {
+    opacity: 1;
+    font-size: 34px;
+    bottom: -110px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #card {
+    width: 80% !important;
+  }
+  #notice.show {
+    opacity: 1;
+    font-size: 28px;
+    bottom: -150px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #card {
+    width: 80% !important;
+  }
+  #notice.show {
+    opacity: 1;
+    font-size: 28px;
+    bottom: -110px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #card {
+    width: 95% !important;
+  }
+  #notice.show {
+    opacity: 1;
+    font-size: 28px;
+    bottom: -100px;
+  }
 }
