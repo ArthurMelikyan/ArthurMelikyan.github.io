@@ -1,5 +1,5 @@
 # ArthurMelikyan  
-## Find my portfolio, info about me, skills, projects and packages here
+## Find my portfolio, info about me, skills, interesting projects and packages here
 
 ![](https://raw.githubusercontent.com/ArthurMelikyan/ArthurMelikyan.github.io/master/img/fbcover.jpg)
 
@@ -10,4 +10,4 @@
 [facebook](https://www.facebook.com/arthmelikyan/)
 
 ## web
-[https://arthurmelikyan.github.io]
+https://arthurmelikyan.github.io
