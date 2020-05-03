@@ -7,4 +7,4 @@ Find my portfolio, info about me, skills, projects and packages here
 
 [facebook](https://www.facebook.com/arthmelikyan/)
 
-[web][https://arthurmelikyan.github.io)
+[web](https://arthurmelikyan.github.io)
