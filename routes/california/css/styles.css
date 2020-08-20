@@ -1,0 +1,205 @@
+@font-face {
+font-family: "DINNextW01-Light";
+src: url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot");
+src: url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot?#iefix") format("embedded-opentype"),
+url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff2") format("woff2"),
+url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff") format("woff"), 
+url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.ttf") format("truetype"), 
+url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.svg#DINNextW01-Light") format("svg");
+ }
+
+ body {
+     font-family: DINNextW01-Light;
+     font-size: 100%;
+     color: #000;
+ }
+ .clear {
+     clear: both;
+ }
+.bold7 {
+    font-weight: 700;
+}
+.bold8 {
+    font-weight: 800;
+}
+/* Header */
+.page_head .head_link_off{
+    padding: 10px 30px;
+    border: 4px solid #4facfe;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+}
+.page_head{
+    color: #fff;
+    background: #56ab2f;
+    background: -webkit-linear-gradient (120deg,  #55cc65  20%, #d4fc79 100%);
+    background: linear-gradient(120deg,  #55cc65 20%, #d4fc79 100%);
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+h1.delivery_title{
+    font-size: 80px;
+    line-height: 70px;
+}
+h2.delivery_subtitle{
+    font-size: 38px; 
+}
+/* End header */
+
+/* navbar  */
+ #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #4facfe;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background: -webkit-linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+#mainNav.navbar-shrink .navbar-brand img {
+    width: 150px;
+    transition: all .5s;
+}
+.navbar-brand img {
+    width: 220px;
+}
+ 
+
+#mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    background-color: #fed136
+}
+
+ 
+
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #fed136
+}
+
+/* emd mavbar */
+
+/* how it works */
+.how_it_works {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.how_it_works .ico, .how_it_works .desc {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #26B6C1;
+
+}
+.how_it_works .ico i {
+    font-size: 120px;
+}
+/* end how it works */
+
+/* cities */
+.cities{
+    background-image: url('../images/cfd4c6_bc4378af9c554bc382127c8a6f49bffb_mv2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    height: 600px;
+}
+.cities .overlay{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    background-color: rgba(0, 0, 0,.5);
+}
+.cities .map{
+    padding-top: 60px;
+}
+.cities .map svg{
+    margin-top: 50px;
+    width: 60%;
+    display: block;
+    float: left;
+}
+
+/* map */
+#mapobj {
+
+}
+ #mapobj path,  #mapobj polyline,  #mapobj circle, #mapobj  polygon , #mapobj g{
+    fill: #4facfe !important;
+    stroke:  #ff8800  !important;
+    cursor: pointer;
+  }
+
+
+#us-map{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  path:hover, circle:hover, polyline:hover,polygon:hover {
+    stroke: #002868 !important;
+    stroke-width:2px;
+    stroke-linejoin: round;
+    fill: #002868 !important;
+    cursor: pointer;
+  }
+  path, polyline, circle, polygon {
+    fill: #4facfe !important;
+    stroke:  #ff8800  !important;
+    cursor: pointer;
+  }
+  
+/* endmap */
+/* end cities */
+
+
+
+
+
+
+
+
+/* medias */
+
+@media (max-width:992px) {
+    #mainNav {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        -webkit-transition: padding-top .3s, padding-bottom .3s;
+        -moz-transition: padding-top .3s, padding-bottom .3s;
+        transition: padding-top .3s, padding-bottom .3s;
+        border: none;
+        background-color: transparent
+    }
+
+    #mainNav .navbar-brand {
+        font-size: 1.75em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        padding: 1.1em 1em !important
+    }
+
+    #mainNav.navbar-shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: rgba(33, 37, 41, .7)
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0
+    }
+}
