@@ -13,16 +13,29 @@ body {
     font-size: 100%;
     color: #000;
 }
-
+.content{
+    display: none;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-image: url('https://lkp.dispendik.surabaya.go.id/assets/loading.gif') ;
+    background-position:50% 50%;
+}
 .tooltip.fade,
 .tooltip.show {
-    font-size: 26px !important;
+    font-size: 20px !important;
 }
-
-.clear {
-    clear: both;
+ul li{
+    list-style: none;
 }
-
+ 
 .bold7 {
     font-weight: 700;
 }
@@ -94,18 +107,18 @@ h2.delivery_subtitle {
     color: #3d3d3d;
     margin-left: 15px;
 }
-#mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #ff8800;
-    transition: all .3s;
-}
+#mainNav .navbar-toggler:focus{
+    border: 0;
+    outline: 0;
+} 
 #mainNav .navbar-toggler {
-    font-size: 12px;
+    font-size: 18px;
     right: 0;
     padding: 13px;
     text-transform: uppercase;
     color: #fff;
     border: 0;
-    background-color: #fed136
+    /* background-color: #fed136; */
 }
 
 
@@ -116,6 +129,11 @@ h2.delivery_subtitle {
 .how_it_works {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.how_it_works .how_it_works_item:hover * {
+    color: #4facfe;
+    transition: color .3s;
 }
 
 .how_it_works .ico,
@@ -147,11 +165,12 @@ h2.delivery_subtitle {
 .cities .cities_names ul {
     margin-top: 200px;
 }
-
+.cities .cities_names ul li:not(:last-child):after {
+    content: ", ";
+}
 .cities .cities_names ul li {
     float: left;
     padding: 5px;
-    list-style: none;
     color: #fff;
     font-weight: 900;
     font-size: 26px;
@@ -212,23 +231,64 @@ h2.delivery_subtitle {
  
 /* end map */
 /* Email wrap */
-.emal_wrap{
-
+.email_wrap {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.email_wrap .email_info_wrap {
+    color: #26B6C1;
+}
+.email_wrap .email_info_wrap h1{
+    font-size: 70px;
+}
+.email_wrap .email_info_wrap p{
+    font-size: 22px;
+}
+.email_forms .email_submit {
+    background-color: #26B6C1;
+    color: #fff;
+    font-weight: bold;
+}
+.email_forms .email_submit:hover {
+    background-color: #4facfe;
+    transition: background-color .5s;
 }
 /*  END Email wrap */
-.footer{
+
+/* footer */
+
+#footer{
     background: #56ab2f;
     background: -webkit-linear-gradient (120deg, #55cc65 20%, #d4fc79 100%);
     background: linear-gradient(120deg, #55cc65 20%, #d4fc79 100%);
     padding-top: 20px;
     padding-bottom: 5px;
 }
-/* footer */
+#footer .social_links ul li {
+    padding: 5px;
+    float: left;
+    margin-left: 10px;
+    margin-top: -8px;
+    border-radius: 20px;
+}
 
+#footer .social_links ul li i{
+    color: #fff;
+    font-size: 32px; 
+}
+#footer .social_links ul li i.fa-facebook-square:hover{
+    color: #3b5998;
+    transition:color .5s;
+}
+#footer .social_links ul li i.fa-instagram-square:hover{ 
+    color: #d6249f;
+    transition:color .5s;
+}
 /* End footer */
 /* medias */
 
 @media (max-width:992px) {
+
     #mainNav {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -247,17 +307,78 @@ h2.delivery_subtitle {
     }
 
     #mainNav .navbar-nav .nav-item .nav-link {
-        padding: 1.1em 1em !important
+        padding: 1.1em 1em !important;
+        margin-top: 8px;
+        margin:0;
     }
-
+    #mainNav .navbar-nav .nav-item:hover {
+        background-color: rgba(255, 255, 255,.3);
+    }
+   
     #mainNav.navbar-shrink {
         padding-top: 0;
-        padding-bottom: 0;
         background-color: rgba(33, 37, 41, .7)
+    }
+    #mainNav .navbar-collapse.show{
+        padding-bottom: 10px;
     }
 
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0
+    }
+
+    .cities .cities_names ul{
+        margin-top: 70px;
+    }
+    .link_off_btn{
+        padding: 8px 22px;
+        font-size: 18px;
+    }
+    .cities .cities_names ul li {
+        font-size: 20px;
+    }
+    .email_wrap .email_info_wrap p{
+        font-size: 18px;
+    }
+     
+}
+
+@media (max-width:787px) {
+    .how_it_works .ico, .how_it_works .desc h3{
+        font-size: 22px;
+    }
+    .cities_names{
+        text-align: center;
+    }
+    .cities_names ul li{
+        font-size: 22px !important; 
+    }
+    .cities .link_off_btn{
+        margin-left: 0;
+    }
+    .cities .map{
+        margin-top: 20px;
+    }
+    .cities .map svg {
+        float: none;
+        margin: 0 auto;
+    }
+    .cities {
+        background-size: cover; 
+    }
+
+
+    #footer .social_links ul li {
+        text-align: center !important;
+        display: block !important;
+
+    }
+
+    .navbar-brand img {
+        width: 160px;
+    }
+    h1.delivery_title{
+        font-size: 60px;
     }
 }
