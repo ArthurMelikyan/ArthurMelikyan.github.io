@@ -16,6 +16,7 @@ body {
 .content{
     display: none;
 }
+ 
 .loader {
     position: fixed;
     left: 0px;
@@ -25,7 +26,7 @@ body {
     z-index: 9999;
     background-color: #ffffff;
     background-repeat: no-repeat;
-    background-image: url('https://lkp.dispendik.surabaya.go.id/assets/loading.gif') ;
+    background-image: url('../images/Spinner-1s-200px.svg') ;
     background-position:50% 50%;
 }
 .tooltip.fade,
