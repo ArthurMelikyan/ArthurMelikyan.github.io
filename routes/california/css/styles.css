@@ -163,7 +163,7 @@ h2.delivery_subtitle {
 }
 
 .cities .cities_names ul {
-    margin-top: 200px;
+    margin-top: 160px;
 }
 .cities .cities_names ul li:not(:last-child):after {
     content: ", ";
