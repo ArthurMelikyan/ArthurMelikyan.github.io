@@ -6,48 +6,62 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <noscript>
+        <META HTTP-EQUIV="Refresh" CONTENT="0;URL=ShowErrorPage.html">
+    </noscript>
     <title>California delivery</title>
 </head>
 <body>
     <div class="loader"></div>
     <div class="content">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-
-            <div class="container">
-                <a class="navbar-brand" href="/"><img src="images/budee-logo-white.webp" alt="budee"></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item bold8">
-                            <a class="nav-link" href="javascript:void(0)" id="home" >Home</a>
-                        </li>
-                        <li class="nav-item bold8">
-                            <a class="nav-link" href="https://www.budeedelivers.com/first-order-discount" target="_blank">Get my 20% off</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-            <div class="container-fluid page_head">
-                <div class="container">
-                    <div class="col-lg-6 col-md-8 col-12">
-                        <h1 class="delivery_title">60 MINUTE DELIVERY RIGHT TO YOUR DOOR.</h1>
-                        <h2 class="delivery_subtitle">20% OFF OF YOUR FIRST ORDER</h2>
-                        <div class="mt-4">
-                            <a href="https://www.budeedelivers.com/first-order-discount" target="_blank" class="link_off_btn">GET MY 20% OFF</a>
+            <header class="top_header">
+                <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+                    <div class="container">
+                        <a class="navbar-brand navbar-logo" href="./index.html">
+                            <span>Calihigh</span>
+                            <span>Just relax</span>
+                        </a>
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav text-uppercase ml-auto">
+                                <li class="nav-item bold8">
+                                    <a class="nav-link" href="./index.html" id="home" >Home</a>
+                                </li>
+                                <li class="nav-item bold8">
+                                    <a class="nav-link" href="./order.html">Get my 20% off</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-            </div>
+                </nav>
+                    <div class="container-fluid page_head">
+                        <div class="container">
+                            <div class="row">
+                                <div class="page_head_titles col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <h1 class="delivery_title">60 MINUTE DELIVERY RIGHT TO YOUR DOOR.</h1>
+                                    <h2 class="delivery_subtitle">20% OFF OF YOUR FIRST ORDER</h2>
+                                    <div class="mt-5">
+                                        <a href="./order.html" class="link_off_btn">GET MY 20% OFF</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 head_img_block">
+                                    <img src="./images/phone2-small.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </header>
             <div class="container how_it_works">
                 <div class="col-md-12 mt-5">
+                    <h1 class="text-center def_blue bold8 mb-5">How it works</h1>
                     <div class="row">
-                        <div class="col-md-4 col-12 how_it_works_item">
+                        <div class="col-md-4 col-4 how_it_works_item">
                             <div class="ico">
                                 <i class="fas fa-mobile-alt"></i>
                             </div>
@@ -55,7 +69,7 @@
                                 <h3>create an account easily from any device</h3>
                             </div>
                         </div>
-                        <div class="col-md-4 col-12 how_it_works_item">
+                        <div class="col-md-4 col-4 how_it_works_item">
                             <div class="ico">
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
@@ -63,7 +77,7 @@
                                 <h3>browse our wide selection & add your faves to your cart</h3>
                             </div>
                         </div>
-                        <div class="col-md-4 col-12 how_it_works_item">
+                        <div class="col-md-4 col-4 how_it_works_item">
                             <div class="ico">
                                 <i class="fas fa-truck-moving"></i>
                             </div>
@@ -76,26 +90,42 @@
             </div>
     
             <div class="container-fluid cities pt-1 pb-5">
-                <!-- <div class="overlay"></div> -->
                 <div class="container">
                     <div class="row">
     
-                        <div class="col-md-6 cities_names pt-3 pb-3">
+                        <div class="col-xl-6 col-lg col-md-12 cities_names mt-5">
+                            <h1 class="bold8">We deliver in...</h1>
                             <ul>
-                                <li>North Hollywood</li>
-                                <li>Pasadena</li>
                                 <li>Glendale</li>
-                                <li>Burbank</li>
-                                <li>San Marino</li>
+                                <li>Northridge</li>
+                                <li>North Hills</li>
+                                <li>North Hollywood</li>
+                                <li>Encino</li>
+                                <li>Woodland Hills</li>
+                                <li>Tarzana</li>
+                                <li>Van Nuys</li>
+                                <li>Sun Valley</li>
+                                <li>Universal City</li>
+                                <li>Hollywood</li>
                                 <li>Calabasas</li>
+                                <li>Sherman Oaks</li>
+                                <li>Slymar</li>
+                                <li>San Fernando</li>
+                                <li>Porter Ranch</li>
+                                <li>Bel Air</li>
+                                <li>Brentwood</li>
+                                <li>Atwater Village</li>
+                                <li>Pasadena</li>
+                                <li>Pacoima</li>
+                                <li>Arleta</li>
                             </ul>
                             <div class="clearfix"></div> 
                             <div class="mt-5">
-                                <a href="https://www.budeedelivers.com/first-order-discount" target="_blank" class="link_off_btn">GET MY 20% OFF</a>
+                                <a href="./order.html" class="link_off_btn">GET MY 20% OFF</a>
                             </div> 
                         </div>
                       
-                        <div class="col-md-6 map pt-3 pb-3" id="map"> 
+                        <div class="col-xl-6 col-lg col-md-12 map pt-3 pb-3" id="map"> 
                             <div class="map_block">
                             </div>
                         </div>
@@ -130,7 +160,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="copyright col-lg-6 col-md-8 col-sm-8 col-12">
-                            <p class="pt-1">© 2020 Budee Inc<span class="ml-4"><a href="#" class="tt" title="Privacy Policy">Privacy Policy</a></span></p>
+                            <p class="pt-1">© 2020 Calihigh Inc C9-0000060-LIC
+                            <!-- <span class="ml-4">
+                                <a href="#" class="tt" title="Privacy Policy">Privacy Policy</a>
+                            </span> -->
+                        </p>
                         </div>
                         <div class="social_links col-lg-6 col-md-4 col-sm-4 col-12">
                             <ul>

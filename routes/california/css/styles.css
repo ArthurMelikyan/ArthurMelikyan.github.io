@@ -7,16 +7,18 @@
         url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.ttf") format("truetype"),
         url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.svg#DINNextW01-Light") format("svg");
 }
-
 body {
     font-family: DINNextW01-Light;
     font-size: 100%;
     color: #000;
 }
+.def_blue{
+    color: #26B6C1;
+}
 .content{
     display: none;
 }
- 
+
 .loader {
     position: fixed;
     left: 0px;
@@ -52,29 +54,51 @@ a:hover{
     text-decoration: none;
 }
 /* Header */
- .link_off_btn {
-    padding: 10px 30px;
-    border: 4px solid #4facfe;
-    background-color: #000;
-    color: #fff;
-    font-weight: bold;
-    font-size: 22px;
-}
- .link_off_btn:hover {
-    text-decoration: none;
-    color: #4facfe;
-    transition: color .3s; 
-}
-
-.page_head {
+header.top_header{
+    min-height: 100%;
+    height: 100%;
+    padding-top:10px;
+    padding-bottom:10px;
     color: #fff;
     background: #56ab2f;
     background: -webkit-linear-gradient (120deg, #55cc65 20%, #d4fc79 100%);
     background: linear-gradient(120deg, #55cc65 20%, #d4fc79 100%);
-    padding-top: 150px;
-    padding-bottom: 50px;
+ 
+}
+ .link_off_btn {
+    padding: 10px 80px;
+    border: 4px solid #000;
+    /* border: 4px solid #26B6C1; */
+    /* background-color: #000; */
+    color: #000;
+    font-weight: 900;
+    font-size: 22px;
+}
+ .link_off_btn:hover {
+    text-decoration: none;
+    color: #26B6C1; 
+    transition: all .3s; 
 }
 
+.page_head {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* color: #fff;
+    background: #56ab2f;
+    background: -webkit-linear-gradient (120deg, #55cc65 20%, #d4fc79 100%);
+    background: linear-gradient(120deg, #55cc65 20%, #d4fc79 100%);
+    padding-top: 150px;
+    padding-bottom: 50px; */
+}
+ 
+.head_img_block img{
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%; 
+    /* width: 100%;
+    height: 100%; */
+    /* min-height: 100%; */
+}
 h1.delivery_title {
     font-size: 80px;
     line-height: 70px;
@@ -87,26 +111,61 @@ h2.delivery_subtitle {
 /* End header */
 
 /* navbar  */
-#mainNav.navbar-shrink {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #4facfe;
-    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    background: -webkit-linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+ 
+
+.navbar-logo span:nth-child(1), .order-logo span:nth-child(1){
+    font-size:3.5em !important;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    font-weight: 400;
+    font-family: 'Leckerli One', cursive !important;
+}
+ 
+.navbar-logo{
+    position: relative;
+    text-align: right;
+    float: right;
+}
+.navbar-logo span:nth-child(2) {
+    position: absolute;
+    left: 35%;
+    bottom: 4px;
+}
+.order .order-logo{
+    text-align: center;
+    margin: 0 auto;
+    min-height: 100%;   
+    display: block;
+    font-size: 30px;
+    position: relative;
+    width: 350px;
 }
 
-#mainNav.navbar-shrink .navbar-brand img {
-    width: 130px;
-    transition: all .5s;
+.order .order-logo span:nth-child(1){
+    color: #56ab2f;
+    font-weight:900;
 }
-
-.navbar-brand img {
+.order .order-logo span:nth-child(2){
+    color: #56ab2f; 
+    font-weight:900;
+    position: absolute;
+    bottom: 0;
+    right: 90px;
+}
+.navbar-logo img {
     width: 220px;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-    color: #3d3d3d;
-    margin-left: 15px;
+    color: #fff;
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #000;
+    transition: color .3s;
 }
 #mainNav .navbar-toggler:focus{
     border: 0;
@@ -128,8 +187,11 @@ h2.delivery_subtitle {
 
 /* how it works */
 .how_it_works {
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 60px;
+}
+.how_it_works h1.def_blue {
+    font-size: 72px;
 }
 
 .how_it_works .how_it_works_item:hover * {
@@ -157,14 +219,30 @@ h2.delivery_subtitle {
     margin-left: 40px; 
 }
 .cities {
-    background-image: url('../images/cfd4c6_bc4378af9c554bc382127c8a6f49bffb_mv2.webp');
+    background-image: url('../images/palm.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
+.cities a.link_off_btn{
+    background-color: rgba(38, 182, 193,.5);
+    color: #fff;
+    border: 3px solid #fff;
+}
+.cities a.link_off_btn:hover{
+    background-color: rgba(38, 182, 193,.9);
+    color: #fff;
+    border: 1px solid #fff;
+}
 
+.cities .cities_names h1 {
+    color: #fff;
+    text-align: center;
+}
 .cities .cities_names ul {
-    margin-top: 160px;
+    margin-top: 30px;
 }
 .cities .cities_names ul li:not(:last-child):after {
     content: ", ";
@@ -174,7 +252,7 @@ h2.delivery_subtitle {
     padding: 5px;
     color: #fff;
     font-weight: 900;
-    font-size: 26px;
+    font-size: 20px;
 }
 .cities:before {
     content: "";
@@ -183,7 +261,7 @@ h2.delivery_subtitle {
     left: 0;
     height: 100%;
     width: 100%; 
-    background-color: rgba(0, 0, 0,.6);
+    background-color: rgba(0, 0, 0,.4);
 }
  
 
@@ -259,6 +337,8 @@ h2.delivery_subtitle {
 /* footer */
 
 #footer{
+    min-height: 100%;
+    height: 100%;
     background: #56ab2f;
     background: -webkit-linear-gradient (120deg, #55cc65 20%, #d4fc79 100%);
     background: linear-gradient(120deg, #55cc65 20%, #d4fc79 100%);
@@ -286,10 +366,58 @@ h2.delivery_subtitle {
     transition:color .5s;
 }
 /* End footer */
+
+/* ORDER */
+.order{
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    /* margin-top: 50px; */
+}
+.order .first_order_msg_block{ 
+    box-sizing: border-box; 
+}
+/* .order .order_title{ 
+    margin-bottom: 50px;
+    margin-top: 30%;
+} */
+.order .first_order_msg_block h1{
+    font-weight: 900; 
+    vertical-align: middle;
+    font-size: 50px;
+    color: #26B6C1;
+    text-align: center;
+}
+ 
+/* END ORDER */
+
 /* medias */
 
+@media (max-width:980px) {
+    .order .first_order_msg_block h1{ 
+        font-size: 45px; 
+    }
+     
+}
 @media (max-width:992px) {
-
+    .page_head{
+        padding-bottom: 10px !important;
+    }
+    .page_head .container {
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: none;
+      }
+    .page_head_titles{
+        text-align: center;
+    }
+    .head_img_block{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .order .order_title{ 
+        margin-top: 40%;
+    }
     #mainNav {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -301,7 +429,7 @@ h2.delivery_subtitle {
     }
 
     #mainNav .navbar-brand {
-        font-size: 1.75em;
+        font-size: 1.25em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s
@@ -311,8 +439,17 @@ h2.delivery_subtitle {
         padding: 1.1em 1em !important;
         margin-top: 8px;
         margin:0;
+        text-align: center;
+        font-size: 22px;
     }
+    #mainNav .navbar-brand {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+   
     #mainNav .navbar-nav .nav-item:hover {
+        color: #fff;
         background-color: rgba(255, 255, 255,.3);
     }
    
@@ -330,28 +467,62 @@ h2.delivery_subtitle {
     }
 
     .cities .cities_names ul{
-        margin-top: 70px;
+        margin-top: 30px;
+    }
+    .cities .map_block{
+        margin-top: 50px;
+    }
+    .cities .map svg { 
+        width: 100%;  
+        float: none;
+        margin: 0 auto;
+    }
+    .cities_names{
+        text-align: center;
     }
     .link_off_btn{
         padding: 8px 22px;
         font-size: 18px;
     }
     .cities .cities_names ul li {
-        font-size: 20px;
+        font-size: 18px !important;
     }
     .email_wrap .email_info_wrap p{
         font-size: 18px;
     }
-     
-}
-
-@media (max-width:787px) {
     .how_it_works .ico, .how_it_works .desc h3{
         font-size: 22px;
     }
-    .cities_names{
-        text-align: center;
+}
+
+@media (max-width:787px) {
+    .order .order-logo{
+        font-size: 24px;
     }
+    
+    .order .first_order_msg_block h1{
+        font-size: 30px;
+    }
+    .order .order-logo{
+        font-size: 16px;
+    }
+ 
+    .order .order-logo span:nth-child(2){
+        right: 140px;
+    }
+    .how_it_works.container {
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: none;
+        padding-bottom: 30px !important;
+      }
+    .how_it_works .ico, .how_it_works .desc h3{
+        font-size: 18px;
+    }
+    .how_it_works .ico i {
+        font-size: 90px;
+    }
+  
     .cities_names ul li{
         font-size: 22px !important; 
     }
@@ -379,7 +550,24 @@ h2.delivery_subtitle {
     .navbar-brand img {
         width: 160px;
     }
+
     h1.delivery_title{
         font-size: 60px;
     }
 }
+
+@media (max-width:620px) {
+    .how_it_works .ico, .how_it_works .desc h3{
+        font-size: 16px;
+    }
+    .how_it_works .ico i {
+        font-size: 80px;
+    }
+    .cities .map svg {
+        width: 80%;
+        max-height: 300px;
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+ }
