@@ -414,6 +414,7 @@ h2.delivery_subtitle {
  
     .order .top_header{
         height: 30vh;
+        min-height: 30vh;
     }
     .order .first_order_msg_block{
         height: 55vh; 
