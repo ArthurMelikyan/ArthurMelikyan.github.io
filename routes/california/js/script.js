@@ -4,19 +4,19 @@ $(document).ready(function(){
         $(".content").fadeIn(500); 
         $(".loader").remove();
     });
-    function order_page_height(){
-        if ($(".order").length) {   
-            var header_h = $('.order .top_header').outerHeight(true);
-            var footer_h = $('.order #footer').outerHeight(true);
-            var calc_block_h = window.innerHeight-header_h-footer_h;
-            $('.first_order_msg_block').height(calc_block_h);
-            $('.order_title').css({marginTop:calc_block_h/4});
-        }
-    }
-    order_page_height();
-    $(window).resize(function() { 
-        order_page_height();
-    });
+    // function order_page_height(){
+    //     if ($(".order").length) {   
+    //         var header_h = $('.order .top_header').outerHeight(true);
+    //         var footer_h = $('.order #footer').outerHeight(true);
+    //         var calc_block_h = window.innerHeight-header_h-footer_h;
+    //         $('.first_order_msg_block').height(calc_block_h);
+    //         $('.order_title').css({marginTop:calc_block_h/4});
+    //     }
+    // }
+    // order_page_height();
+    // $(window).resize(function() { 
+    //     order_page_height();
+    // });
     // window.onresize = function(e) {
     //     order_page_height();
     // };

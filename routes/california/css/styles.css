@@ -132,6 +132,17 @@ h2.delivery_subtitle {
     left: 35%;
     bottom: 4px;
 }
+.order .top_header{
+    height: 20vh;
+}
+.order .first_order_msg_block{
+    height: 60vh;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+.order #footer{
+    height: 20vh;
+}
 .order .order-logo{
     text-align: center;
     margin: 0 auto;
@@ -400,6 +411,24 @@ h2.delivery_subtitle {
      
 }
 @media (max-width:992px) {
+ 
+    .order .top_header{
+        height: 25vh;
+    }
+    .order .first_order_msg_block{
+        height: 60vh; 
+        /* padding-top: 0 !important; */
+    }
+    .order #footer{
+        height: 15vh;
+        min-height: 100%;
+    }
+    .order .first_order_msg_block h1{
+        font-size: 34px;
+    }
+    .order .order-logo{
+        font-size: 18px;
+    }
     .page_head{
         padding-bottom: 10px !important;
     }
@@ -415,9 +444,7 @@ h2.delivery_subtitle {
         width: 100%;
         margin-top: 50px;
     }
-    .order .order_title{ 
-        margin-top: 40%;
-    }
+   
     #mainNav {
         padding-top: 25px;
         padding-bottom: 25px;
