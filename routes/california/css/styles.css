@@ -413,10 +413,10 @@ h2.delivery_subtitle {
 @media (max-width:992px) {
  
     .order .top_header{
-        height: 25vh;
+        height: 30vh;
     }
     .order .first_order_msg_block{
-        height: 60vh; 
+        height: 55vh; 
         min-height: 400px;
         /* padding-top: 0 !important; */
     }
@@ -525,7 +525,7 @@ h2.delivery_subtitle {
 
 @media (max-width:787px) {
     .order .order-logo{
-        font-size: 24px;
+        font-size: 22px;
     }
     
     .order .first_order_msg_block h1{
@@ -585,6 +585,9 @@ h2.delivery_subtitle {
 }
 
 @media (max-width:620px) {
+    .order .order-logo{
+        font-size: 18px;
+    }
     .how_it_works .ico, .how_it_works .desc h3{
         font-size: 16px;
     }
