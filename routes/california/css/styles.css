@@ -417,6 +417,7 @@ h2.delivery_subtitle {
     }
     .order .first_order_msg_block{
         height: 60vh; 
+        min-height: 400px;
         /* padding-top: 0 !important; */
     }
     .order #footer{
