@@ -131,17 +131,16 @@ h2.delivery_subtitle {
     position: absolute;
     left: 35%;
     bottom: 4px;
-}
-.order .top_header{
-    height: 20vh;
-}
+} 
 .order .first_order_msg_block{
-    height: 60vh;
     box-sizing: border-box;
-    padding-top: 80px;
+    margin-top: 90px;
+    min-height: 400px;
+    height: 400px;
 }
 .order #footer{
-    height: 20vh;
+    position: absolute;
+    bottom: 0;
 }
 .order .order-logo{
     text-align: center;
@@ -347,9 +346,7 @@ h2.delivery_subtitle {
 
 /* footer */
 
-#footer{
-    min-height: 100%;
-    height: 100%;
+#footer{ 
     background: #56ab2f;
     background: -webkit-linear-gradient (120deg, #55cc65 20%, #d4fc79 100%);
     background: linear-gradient(120deg, #55cc65 20%, #d4fc79 100%);
@@ -411,20 +408,7 @@ h2.delivery_subtitle {
      
 }
 @media (max-width:992px) {
- 
-    .order .top_header{
-        height: 30vh;
-        min-height: 30vh;
-    }
-    .order .first_order_msg_block{
-        height: 55vh; 
-        min-height: 400px;
-        /* padding-top: 0 !important; */
-    }
-    .order #footer{
-        height: 15vh;
-        min-height: 100%;
-    }
+  
     .order .first_order_msg_block h1{
         font-size: 34px;
     }
