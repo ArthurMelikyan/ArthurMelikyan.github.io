@@ -60,9 +60,9 @@ header.top_header{
     padding-top:10px;
     padding-bottom:10px;
     color: #fff;
-    background: #56ab2f;
-    background: -webkit-linear-gradient (120deg, #55cc65 20%, #d4fc79 100%);
-    background: linear-gradient(120deg, #55cc65 20%, #d4fc79 100%);
+    background: #6163ff;
+    background: -webkit-linear-gradient (120deg, #6163ff 20%, #72ffaf 100%);
+    background: linear-gradient(120deg, #6163ff 20%, #72ffaf 100%);
  
 }
  .link_off_btn {
@@ -83,12 +83,6 @@ header.top_header{
 .page_head {
     padding-top: 50px;
     padding-bottom: 50px;
-    /* color: #fff;
-    background: #56ab2f;
-    background: -webkit-linear-gradient (120deg, #55cc65 20%, #d4fc79 100%);
-    background: linear-gradient(120deg, #55cc65 20%, #d4fc79 100%);
-    padding-top: 150px;
-    padding-bottom: 50px; */
 }
  
 .head_img_block img{
@@ -142,6 +136,9 @@ h2.delivery_subtitle {
     position: absolute;
     bottom: 0;
 }
+.order .order-logo img{
+    width: 100%;
+}
 .order .order-logo{
     text-align: center;
     margin: 0 auto;
@@ -164,7 +161,7 @@ h2.delivery_subtitle {
     right: 90px;
 }
 .navbar-logo img {
-    width: 220px;
+    width: 300px;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -229,12 +226,15 @@ h2.delivery_subtitle {
     margin-left: 40px; 
 }
 .cities {
-    background-image: url('../images/palm.jpg');
+    background-image: url('https://images.unsplash.com/photo-1533157461-59f499ba82e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     background-size: cover;
-    position: relative;
+    padding-top: 170px;
+    padding-bottom: 170px;
+    min-height: 550px;
+    /* position: relative; */
 }
 .cities a.link_off_btn{
     background-color: rgba(38, 182, 193,.5);
@@ -264,7 +264,7 @@ h2.delivery_subtitle {
     font-weight: 900;
     font-size: 20px;
 }
-.cities:before {
+/* .cities:before {
     content: "";
     position: absolute;
     top: 0;
@@ -273,7 +273,7 @@ h2.delivery_subtitle {
     width: 100%; 
     background-color: rgba(0, 0, 0,.4);
 }
- 
+  */
 
 .cities .map,
 .cities .cities_names {
@@ -347,9 +347,9 @@ h2.delivery_subtitle {
 /* footer */
 
 #footer{ 
-    background: #56ab2f;
-    background: -webkit-linear-gradient (120deg, #55cc65 20%, #d4fc79 100%);
-    background: linear-gradient(120deg, #55cc65 20%, #d4fc79 100%);
+    background: #6163ff;
+    background: -webkit-linear-gradient (120deg, #6163ff 20%, #72ffaf 100%);
+    background: linear-gradient(120deg, #6163ff 20%, #72ffaf 100%);
     padding-top: 20px;
     padding-bottom: 5px;
 }
