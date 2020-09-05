@@ -108,15 +108,20 @@ h2.delivery_subtitle {
 }
  
 .order .first_order_msg_block{
-    box-sizing: border-box;
-    margin-top: 90px;
-    min-height: 400px;
-    height: 400px;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    height: 100vh;
 }
-.order #footer{
-    position: absolute;
-    bottom: 0;
-}
+
 .order .order-logo img{
     width: 100%;
 }
@@ -130,17 +135,6 @@ h2.delivery_subtitle {
     width: 350px;
 }
 
-.order .order-logo span:nth-child(1){
-    color: #56ab2f;
-    font-weight:900;
-}
-.order .order-logo span:nth-child(2){
-    color: #56ab2f; 
-    font-weight:900;
-    position: absolute;
-    bottom: 0;
-    right: 90px;
-}
 .navbar-logo img {
     width: 300px;
 }
@@ -186,6 +180,9 @@ h2.delivery_subtitle {
     text-align: center;
     text-transform: uppercase; 
  }
+ .how_it_works_item .first_title{
+    font-size: 26px;
+}
  .how_it_works .ico img{
     width: 150px;
     height: 150px;
@@ -305,7 +302,7 @@ h2.delivery_subtitle {
     width: 300px;
 }
 .email_wrap .email_info_wrap h2{
-    font-size: 36px;
+    font-size: 32px;
     margin-top: 20px;
     font-weight: 300;
 }
@@ -353,27 +350,20 @@ h2.delivery_subtitle {
     color: #fdfdfd;
     transition:color .5s;
 } 
+
+#footer p {
+    font-size: 14px;
+}
 /* End footer */
 
 /* ORDER */
-.order{
-    min-height: 100%;
-    height: 100%;
-    width: 100%;
-    /* margin-top: 50px; */
-}
-.order .first_order_msg_block{ 
-    box-sizing: border-box; 
-}
-/* .order .order_title{ 
-    margin-bottom: 50px;
-    margin-top: 30%;
-} */
+
+
 .order .first_order_msg_block h1{
     font-weight: 900; 
     vertical-align: middle;
     font-size: 50px;
-    color: #26B6C1;
+    color: #001EA7;
     text-align: center;
 }
  
@@ -383,7 +373,7 @@ h2.delivery_subtitle {
 
 @media (max-width:980px) {
     .order .first_order_msg_block h1{ 
-        font-size: 45px; 
+        font-size: 54px; 
     }
      
 }
@@ -392,7 +382,7 @@ h2.delivery_subtitle {
         width: 400px;
     }
     .order .first_order_msg_block h1{
-        font-size: 34px;
+        font-size: 45px;
     }
     .order .order-logo{
         font-size: 18px;
@@ -461,6 +451,21 @@ h2.delivery_subtitle {
         padding: 12px 0
     }
 
+    .how_it_works_item .first_title{
+        font-size: 22px;
+    }
+    .how_it_works_item .desc h3{
+        font-size: 16px !important;
+    }
+
+    .cities .right_side h1{
+        margin-top: 0;
+    }
+    .cities .cities_names h1{
+        margin-top: 50px;
+        font-size: 46px;
+        font-weight: 900;
+    }
     .cities .cities_names ul{
         margin-top: 30px;
     }
@@ -476,14 +481,23 @@ h2.delivery_subtitle {
         text-align: center;
     }
     .link_off_btn{
-        padding: 8px 22px;
-        font-size: 18px;
+        padding: 12px 26px;
+        font-size: 20px;
     }
     .cities .cities_names ul li {
-        font-size: 18px !important;
+        font-size: 26px !important;
     }
     .email_wrap .email_info_wrap p{
         font-size: 18px;
+    }
+    .email_wrap .email_info_wrap h2{
+        text-align: center;
+        font-size: 34px;
+    }
+    .email_wrap .email_info_wrap img{
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 30px;
     }
     .how_it_works .ico, .how_it_works .desc h3{
         font-size: 22px;
@@ -491,6 +505,10 @@ h2.delivery_subtitle {
 }
 
 @media (max-width:787px) {
+    .link_off_btn {
+        padding: 8px 22px;
+        font-size: 18px;
+    }
     .navbar-logo img{
         width: 400px;
     }
@@ -499,7 +517,7 @@ h2.delivery_subtitle {
     }
     
     .order .first_order_msg_block h1{
-        font-size: 30px;
+        font-size: 42px;
     }
     .order .order-logo{
         font-size: 16px;
@@ -538,13 +556,15 @@ h2.delivery_subtitle {
         background-size: cover; 
     }
 
-
-    #footer .social_links ul li {
-        text-align: center !important;
-        display: block !important;
-
+    #footer .social_links ul li{
+        padding-top: 10px;
+        margin-left: 7px;
+        padding-left: 0;
+        padding-right: 0;
     }
-
+    #footer .social_links ul li i{
+        font-size: 20px;
+    }
     .navbar-brand img {
         width: 330px;
     }
@@ -554,7 +574,16 @@ h2.delivery_subtitle {
     }
 }
 
+@media (max-width:640px) {
+
+    .how_it_works_item .first_title{
+        font-size: 19px;
+    }
+}
 @media (max-width:620px) {
+    .page_head{
+        padding-top: 10px;
+    }
     .order .order-logo{
         font-size: 18px;
     }
@@ -572,10 +601,97 @@ h2.delivery_subtitle {
         margin: 0 auto;
     }
  }
+@media (max-width:575px) {
+    .container{
+        width: 100% !important;
+    }
+    .how_it_works_item{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: 20px;
+        border-bottom: 1px solid rgb(211, 211, 211);
+    }
+    .how_it_works_item .first_title{
+        font-size: 42px;
+    }
+    .how_it_works .ico, .how_it_works .desc h3{
+        font-size: 24px !important;
+    }
+    .cities .cities_names {
+        margin-top: 60px;
+    }
+    .cities .cities_names ul li{
+        font-size: 20px !important;
+    }
+    #footer p{
+        font-size: 16px;
+    }
+    #footer .social_links ul li{
+        padding-top: 10px;
+        margin-left: 9px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #footer .social_links ul li i{
+        font-size: 26px;
+    }
+}
 @media (max-width:450px) {
-
+   
+    h1.delivery_title{
+        font-size: 50px;
+    }
+    .how_it_works h1.top_title{
+        font-size: 50px;
+    }
+    .how_it_works_item .first_title{
+        font-size: 38px;
+    }
+    .how_it_works .ico, .how_it_works .desc h3{
+        font-size: 20px !important;
+    }
+    .cities .right_side h1{
+        font-size: 42px;
+    }
+    .cities .cities_names ul li{
+        font-size: 18px !important;
+    }
     .navbar-brand img {
         width: 200px;
     }
 
+    #footer p{
+        font-size: 12px;
+    }
+    .email_wrap .email_info_wrap img{
+        width: 100%;
+    }
  }
+
+@media (max-width:370px) {
+    
+    h1.delivery_title {
+        font-size: 44px;
+    }
+    h2.delivery_subtitle{
+        font-size: 32px;
+    }
+    .how_it_works_item{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .cities .cities_names ul li{
+        font-size: 14px !important;
+    }
+}
+@media (max-width:360px) {
+    .email_wrap .email_info_wrap h2{
+        font-size: 26px;
+    }
+    #footer p{
+        font-size: 14px;
+        text-align: center;
+    }
+    
+}
