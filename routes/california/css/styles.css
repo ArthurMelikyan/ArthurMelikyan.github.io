@@ -388,7 +388,9 @@ h2.delivery_subtitle {
      
 }
 @media (max-width:992px) {
-  
+    .navbar-logo img{
+        width: 400px;
+    }
     .order .first_order_msg_block h1{
         font-size: 34px;
     }
@@ -489,6 +491,9 @@ h2.delivery_subtitle {
 }
 
 @media (max-width:787px) {
+    .navbar-logo img{
+        width: 400px;
+    }
     .order .order-logo{
         font-size: 22px;
     }
@@ -541,7 +546,7 @@ h2.delivery_subtitle {
     }
 
     .navbar-brand img {
-        width: 160px;
+        width: 330px;
     }
 
     h1.delivery_title{
@@ -566,4 +571,11 @@ h2.delivery_subtitle {
         float: none;
         margin: 0 auto;
     }
+ }
+@media (max-width:450px) {
+
+    .navbar-brand img {
+        width: 200px;
+    }
+
  }
