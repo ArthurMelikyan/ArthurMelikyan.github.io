@@ -211,11 +211,9 @@ h2.delivery_subtitle {
     padding-bottom: 170px; */
     min-height: 650px;
     /* position: relative; */
-}
-
-.cities{
     color: #fff;
 }
+ 
 .cities .right_side{
     text-align: center;
 }
@@ -240,16 +238,19 @@ h2.delivery_subtitle {
     font-weight: 900;
     font-size: 26px;
 }
-/* .cities:before {
+.cities_wrap{
+    position: relative;
+}
+.cities:before {
     content: "";
-    position: absolute;
+    position: absolute !important;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%; 
-    background-color: rgba(0, 0, 0,.4);
+    background-color: rgba(0, 0, 0,.3) !important;
 }
-  */
+ 
 
 .cities .map svg .los_area{
     fill: #ff8800 !important;
