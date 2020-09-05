@@ -1,16 +1,12 @@
-@font-face {
-    font-family: "DINNextW01-Light";
-    src: url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot");
-    src: url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.eot?#iefix") format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff2") format("woff2"),
-        url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.woff") format("woff"),
-        url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.ttf") format("truetype"),
-        url("https://db.onlinewebfonts.com/t/9ae5e19516bc6428f1327ff3311b2617.svg#DINNextW01-Light") format("svg");
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 body {
-    font-family: DINNextW01-Light;
+    font-family: 'Roboto', sans-serif;
     font-size: 100%;
     color: #000;
+}
+.ffalfa{
+    font-family: 'Alfa Slab One', cursive;
 }
 .def_blue{
     color: #26B6C1;
@@ -66,17 +62,17 @@ header.top_header{
  
 }
  .link_off_btn {
-    padding: 10px 80px;
-    border: 4px solid #000;
-    /* border: 4px solid #26B6C1; */
-    /* background-color: #000; */
-    color: #000;
+    padding: 20px 40px; 
+    background: #FFFFFF;
+    color: #001EA7;
     font-weight: 900;
+    box-shadow: -2px 5px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     font-size: 22px;
 }
  .link_off_btn:hover {
-    text-decoration: none;
-    color: #26B6C1; 
+    text-decoration: none; 
+    box-shadow: -2px 5px 30px rgba(0, 0, 0, 0.7);
     transition: all .3s; 
 }
 
@@ -85,47 +81,32 @@ header.top_header{
     padding-bottom: 50px;
 }
  
-.head_img_block img{
-    /* object-fit: cover; */
+.head_img_block img{ 
     width: 100%;
-    height: 100%; 
-    /* width: 100%;
-    height: 100%; */
-    /* min-height: 100%; */
+    height: 100%;  
 }
 h1.delivery_title {
-    font-size: 80px;
-    line-height: 70px;
+    font-size: 58px;
+    font-family: 'Alfa Slab One', cursive;
+
+    /* line-height: 70px; */
 }
 
 h2.delivery_subtitle {
-    font-size: 38px;
+    font-size: 34px;
 }
 
 /* End header */
 
 /* navbar  */
  
-
-.navbar-logo span:nth-child(1), .order-logo span:nth-child(1){
-    font-size:3.5em !important;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-    font-weight: 400;
-    font-family: 'Leckerli One', cursive !important;
-}
  
 .navbar-logo{
     position: relative;
     text-align: right;
     float: right;
 }
-.navbar-logo span:nth-child(2) {
-    position: absolute;
-    left: 35%;
-    bottom: 4px;
-} 
+ 
 .order .first_order_msg_block{
     box-sizing: border-box;
     margin-top: 90px;
@@ -194,31 +175,29 @@ h2.delivery_subtitle {
 
 /* how it works */
 .how_it_works {
+    color: #001EA7;
     padding-top: 20px;
     padding-bottom: 60px;
 }
-.how_it_works h1.def_blue {
-    font-size: 72px;
+.how_it_works h1.top_title {
+    font-size: 68px;
 }
-
-.how_it_works .how_it_works_item:hover * {
-    color: #4facfe;
-    transition: color .3s;
-}
-
+ .how_it_works_item{
+    text-align: center;
+    text-transform: uppercase; 
+ }
+ .how_it_works .ico img{
+    width: 150px;
+    height: 150px;
+ }
 .how_it_works .ico,
 .how_it_works .desc {
     padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #26B6C1;
-
 }
-
-.how_it_works .ico i {
-    font-size: 120px;
+.how_it_works .desc h3 { 
+    font-size: 18px;
+    font-weight: 300;
 }
-
 /* end how it works */
 
 /* cities  and maps*/
@@ -226,29 +205,30 @@ h2.delivery_subtitle {
     margin-left: 40px; 
 }
 .cities {
-    background-image: url('https://images.unsplash.com/photo-1533157461-59f499ba82e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80');
+    background-image: url('../images/palm.jpg');
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
-    padding-top: 170px;
-    padding-bottom: 170px;
-    min-height: 550px;
+    /* padding-top: 170px;
+    padding-bottom: 170px; */
+    min-height: 650px;
     /* position: relative; */
 }
-.cities a.link_off_btn{
-    background-color: rgba(38, 182, 193,.5);
-    color: #fff;
-    border: 3px solid #fff;
-}
-.cities a.link_off_btn:hover{
-    background-color: rgba(38, 182, 193,.9);
-    color: #fff;
-    border: 1px solid #fff;
-}
 
-.cities .cities_names h1 {
+.cities{
     color: #fff;
+}
+.cities .right_side{
+    text-align: center;
+}
+.cities .right_side h1{
+    margin-top: 80px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 52px;
+    font-weight: 600;
+}
+.cities .cities_names h1 {
     text-align: center;
 }
 .cities .cities_names ul {
@@ -258,11 +238,10 @@ h2.delivery_subtitle {
     content: ", ";
 }
 .cities .cities_names ul li {
-    float: left;
-    padding: 5px;
-    color: #fff;
+    float: left; 
+    padding: 5px; 
     font-weight: 900;
-    font-size: 20px;
+    font-size: 26px;
 }
 /* .cities:before {
     content: "";
@@ -274,11 +253,6 @@ h2.delivery_subtitle {
     background-color: rgba(0, 0, 0,.4);
 }
   */
-
-.cities .map,
-.cities .cities_names {
-    padding-top: 20px;
-}
 
 .cities .map svg .los_area{
     fill: #ff8800 !important;
@@ -324,33 +298,43 @@ h2.delivery_subtitle {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.email_wrap .email_info_wrap {
-    color: #26B6C1;
+.email_wrap {
+    color: #001EA7;
 }
-.email_wrap .email_info_wrap h1{
-    font-size: 70px;
+.email_wrap .email_info_wrap img{
+    width: 300px;
 }
-.email_wrap .email_info_wrap p{
-    font-size: 22px;
+.email_wrap .email_info_wrap h2{
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: 300;
 }
 .email_forms .email_submit {
-    background-color: #26B6C1;
-    color: #fff;
+    border: 3px solid #001EA7;
+    background: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #001EA7;
     font-weight: bold;
 }
 .email_forms .email_submit:hover {
-    background-color: #4facfe;
+    background-color: #001EA7;
+    color: #fff;
     transition: background-color .5s;
 }
 /*  END Email wrap */
 
 /* footer */
 
+#footer a{ 
+    color: #fff;
+}
 #footer{ 
     background: #6163ff;
     background: -webkit-linear-gradient (120deg, #6163ff 20%, #72ffaf 100%);
     background: linear-gradient(120deg, #6163ff 20%, #72ffaf 100%);
     padding-top: 20px;
+    color: #fff;
     padding-bottom: 5px;
 }
 #footer .social_links ul li {
@@ -365,14 +349,10 @@ h2.delivery_subtitle {
     color: #fff;
     font-size: 32px; 
 }
-#footer .social_links ul li i.fa-facebook-square:hover{
-    color: #3b5998;
+#footer .social_links ul li i.fa-facebook-square:hover , #footer .social_links ul li i.fa-instagram-square:hover{
+    color: #fdfdfd;
     transition:color .5s;
-}
-#footer .social_links ul li i.fa-instagram-square:hover{ 
-    color: #d6249f;
-    transition:color .5s;
-}
+} 
 /* End footer */
 
 /* ORDER */
