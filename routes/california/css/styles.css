@@ -7,6 +7,12 @@ body {
 }
 .ffalfa{
     font-family: 'Alfa Slab One', cursive;
+<<<<<<< HEAD
+=======
+}
+.def_blue{
+    color: #26B6C1;
+>>>>>>> 70ffb02ef8300f885721ea172a1026f70db7509b
 }
  
 .content{
